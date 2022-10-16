@@ -1,6 +1,5 @@
 local function shift(letter, s)
     if string.upper(letter) == letter then
-        print("lmaj")
         return string.char((string.byte(letter) + s - 65) % 26 + 65)
     else
         return string.char((string.byte(letter) + s - 97) % 26 + 97)
